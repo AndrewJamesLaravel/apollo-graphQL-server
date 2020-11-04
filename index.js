@@ -1,4 +1,9 @@
 const { ApolloServer, gql } = require('apollo-server')
+const mongoose = require('mongoose')
+const nanoid = require('nanoid')
+const Character = require('./models/Character')
+
+mongoose.connect('mongodb://localhost/nuxtseries-db', {useNewUrlParser: true, useUnifiedTopology: true});
 
 const typeDefs = gql`
     type Character {
@@ -13,15 +18,27 @@ const typeDefs = gql`
         characters: [Character]
         character(id: ID!): Character
     }
+    type Mutation {
+        addCharacter( name: String, status: String, gender: String, image: String ): Character
+    }
   `
 
 const data = require('./data')
 
 const resolvers = {
   Query: {
-    characters: () => data,
-    character: (_, { id }) => {
-      return data.find( character => character.id == id )
+    characters: () => Character.find({}, (error, characters) => {
+      if (error) console.log('error', error)
+        return characters
+    }),
+    character: (_, { id }) => Character.findById(id, (error, character) => {
+        if (error) console.log('error', error)
+          return character
+    })
+  },
+  Mutation: {
+    addCharacter(_, payload) {
+      return Character.create(payload)
     }
   }
 }
