@@ -20,7 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c3f5831-cc8c-4437-a249-3610ea223c18" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/User.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/schema.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Character.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Character.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +35,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="GraphQL File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -50,12 +56,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nuxt-series" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -69,6 +76,7 @@
       <updated>1604475809700</updated>
       <workItem from="1604475810747" duration="13286000" />
       <workItem from="1604510943609" duration="4466000" />
+      <workItem from="1604560072306" duration="15121000" />
     </task>
     <servers />
   </component>
@@ -85,8 +93,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="413" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604582198836">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="413" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1920.1052/1920.0.1920.1080@0.28.1920.1052" timestamp="1604582198836" />
     <state x="689" y="255" width="536" height="597" key="FileChooserDialogImpl" timestamp="1604514725783">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
